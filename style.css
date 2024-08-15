@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.converterWrapper{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.converterWrapper .header{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: white;
+    background-color: darkslategray;
+
+}
+
+.converterBox .formWrapper{
+    width: 550px;
+    height: 660px;
+    background-color: bisque;  
+    margin-left: auto;
+    margin-right: auto;
+           
+
+}
+.formWrapper form .inputBox{
+width: 420px;
+height: 40px;
+background: white;
+border: none;
+margin: 10px 350px 10px 50px;
+text-indent: 30px;
+outline: none;
+
+
+
+}
