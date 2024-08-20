@@ -80,7 +80,9 @@ async function  getSelectedCountry(e) {
        inputData.value = 1;     
    }
    else if(inputData.value==null || inputData.value==""){
-    alert("Enter Valid Amount");
+     let invalidData = document.querySelector('.inputValidation');
+       invalidData.style.display="inline-block";   
+  
    }
    else{
         let fromVal = document.querySelector('.select-from').value;
@@ -92,6 +94,8 @@ async function  getSelectedCountry(e) {
        let jsonResponse =  await rawData.json();
           let Amount = jsonResponse.result;
           alert(Amount);
+           let resultDisplayed =   document.querySelector(".result");
+           resultDisplayed.innerText = Amount+" "+toVal;  
       //  console.log(selectTo.innerText,"faizn"); 
       // console.log(selectTo.value,"currency");
    } 
